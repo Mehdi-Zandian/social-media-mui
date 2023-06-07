@@ -1,16 +1,13 @@
 import { Box, Stack } from "@mui/material";
 import Navbar from "../components/Navbar/Navbar";
+import SideBar from "../components/Sidebar/SideBar";
 
 function Home() {
   return (
     <Box>
       <Navbar />
       <Stack>
-        <p>Side Bar</p>
-        <p>Feed</p>
-        <p>Right Bar</p>
-        {/* Navbar */}
-        {/* SideBar */}
+        <SideBar />
         {/* Feed */}
         {/* RightBar */}
       </Stack>
