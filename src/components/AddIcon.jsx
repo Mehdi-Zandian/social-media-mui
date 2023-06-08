@@ -30,6 +30,7 @@ const StyledModal = styled(Modal)({
 
 const StyledUserBox = styled("div")({
   padding: "10px 0",
+  marginBottom: "10px",
   display: "flex",
   alignItems: "center",
   gap: "10px",
@@ -48,7 +49,7 @@ function AddIcon() {
         sx={{
           position: "fixed",
           bottom: "15px",
-          left: { xs: "calc(50% - 25px)", md: "30px" },
+          left: { xs: "calc(50% - 25px)", lg: "30px" },
         }}
       >
         <Fab color="primary" aria-label="add">
@@ -66,12 +67,12 @@ function AddIcon() {
           sx={{
             width: "400px",
             height: "300px",
-            backgroundColor: "white",
+            backgroundColor: "background.default",
             p: "10px 15px",
             borderRadius: "20px",
           }}
         >
-          <Typography textAlign="center" variant="h6" color="grayText">
+          <Typography textAlign="center" variant="h6" color="text.primary">
             Create a Post
           </Typography>
 
@@ -86,7 +87,9 @@ function AddIcon() {
                 height: "40px",
               }}
             />
-            {"Mehdi Zandian"}
+            <Typography component="span" color="text.primary">
+              Mehdi Zandian
+            </Typography>
           </StyledUserBox>
 
           <TextField
@@ -110,7 +113,7 @@ function AddIcon() {
           </Box>
 
           <ButtonGroup
-            color="primary"
+            color="success"
             variant="contained"
             sx={{ mt: "10px" }}
             fullWidth

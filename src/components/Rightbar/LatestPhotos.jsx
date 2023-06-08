@@ -5,7 +5,7 @@ function LatestPhotos() {
     <Box sx={{ mb: "20px" }}>
       <Typography
         variant="h6"
-        color="grayText"
+        color="text.primary"
         sx={{ opacity: "0.8", mb: "5px" }}
       >
         Latest Photots

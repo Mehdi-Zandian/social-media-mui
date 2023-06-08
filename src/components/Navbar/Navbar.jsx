@@ -62,7 +62,11 @@ function Navbar() {
           </IconButton>
 
           <StyledSearch>
-            <InputBase fullWidth placeholder="Search..." />
+            <InputBase
+              sx={{ color: "GrayText" }}
+              fullWidth
+              placeholder="Search..."
+            />
           </StyledSearch>
 
           <Box gap="20px" sx={{ display: "flex", alignItems: "center" }}>

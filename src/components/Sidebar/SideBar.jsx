@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import {
   Box,
   List,
@@ -8,9 +9,10 @@ import {
   Switch,
 } from "@mui/material";
 import { data } from "../../data/SideBarData";
+import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 
-function SideBar() {
+function SideBar({ mode, darkModeHandler }) {
   return (
     <Box
       flex="1"
@@ -38,9 +40,9 @@ function SideBar() {
           <ListItem disablePadding>
             <ListItemButton>
               <ListItemIcon>
-                <DarkModeIcon />
+                {mode ? <WbSunnyIcon /> : <DarkModeIcon />}
               </ListItemIcon>
-              <Switch />
+              <Switch onClick={darkModeHandler} />
             </ListItemButton>
           </ListItem>
         </List>

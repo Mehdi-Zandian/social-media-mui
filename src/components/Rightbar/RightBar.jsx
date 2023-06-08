@@ -5,7 +5,13 @@ import UserLists from "./UserLists";
 
 function RightBar() {
   return (
-    <Box flex="1" sx={{ p: "10px", borderLeft: "1px solid rgba(0,0,0,0.1)" }}>
+    <Box
+      flex="1"
+      sx={{
+        p: { xs: "10px 10px 100px 10px", lg: "10px" },
+        borderLeft: "1px solid rgba(0,0,0,0.1)",
+      }}
+    >
       <Box
         sx={{
           display: "flex",

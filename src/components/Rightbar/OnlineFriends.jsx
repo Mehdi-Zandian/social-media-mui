@@ -2,8 +2,8 @@ import { Avatar, AvatarGroup, Box, Typography } from "@mui/material";
 
 function OnlineFriends() {
   return (
-    <Box sx={{ mb: "10px" }}>
-      <Typography variant="h6" color="grayText" sx={{ opacity: "0.8" }}>
+    <Box sx={{ mb: "15px" }}>
+      <Typography variant="h6" color="text.primary" sx={{ opacity: "0.8" }}>
         Online Friends
       </Typography>
       <AvatarGroup sx={{ justifyContent: "start", mt: "5px" }} max={4}>

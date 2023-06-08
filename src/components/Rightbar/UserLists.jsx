@@ -14,7 +14,7 @@ function UserLists() {
     <Box>
       <Typography
         variant="h6"
-        color="grayText"
+        color="text.primary"
         sx={{ opacity: "0.8", mb: "5px" }}
       >
         Latest Chats
@@ -24,10 +24,10 @@ function UserLists() {
         sx={{
           width: "100%",
           maxWidth: 360,
-          bgcolor: "grayText",
+          bgcolor: "background.default",
           color: "white",
           borderRadius: "20px",
-          boxShadow: "0 0 8px #555",
+          border: "solid 1px #999",
         }}
       >
         <ListItem alignItems="flex-start">
@@ -38,6 +38,7 @@ function UserLists() {
             />
           </ListItemAvatar>
           <ListItemText
+            sx={{ color: "text.primary" }}
             primary="Brunch this weekend?"
             secondary={
               <>
@@ -45,12 +46,16 @@ function UserLists() {
                   sx={{ display: "inline" }}
                   component="span"
                   variant="body2"
-                  color="white"
+                  color="text.primary"
                   fontWeight="bold"
                 >
                   To Mehdi Zandian
                 </Typography>
-                <Typography variant="subtitle1" component="span" color="#ccc">
+                <Typography
+                  variant="subtitle1"
+                  component="span"
+                  color="text.primary"
+                >
                   {" — I'll be in your neighborhood doing errands this…"}
                 </Typography>
               </>
@@ -68,6 +73,7 @@ function UserLists() {
             />
           </ListItemAvatar>
           <ListItemText
+            sx={{ color: "text.primary" }}
             primary="Summer BBQ"
             secondary={
               <>
@@ -75,12 +81,16 @@ function UserLists() {
                   sx={{ display: "inline" }}
                   component="span"
                   variant="body2"
-                  color="white"
+                  color="text.primary"
                   fontWeight="bold"
                 >
                   To Mehdi Zandian
                 </Typography>
-                <Typography variant="subtitle1" component="span" color="#ccc">
+                <Typography
+                  variant="subtitle1"
+                  component="span"
+                  color="text.primary"
+                >
                   {" — Wish I could come, but I'm out of town this…"}
                 </Typography>
               </>
@@ -98,6 +108,7 @@ function UserLists() {
             />
           </ListItemAvatar>
           <ListItemText
+            sx={{ color: "text.primary" }}
             primary="Let's Go On Vacation"
             secondary={
               <>
@@ -105,12 +116,16 @@ function UserLists() {
                   sx={{ display: "inline" }}
                   component="span"
                   variant="body2"
-                  color="white"
+                  color="text.primary"
                   fontWeight="bold"
                 >
                   To Mehdi Zandian
                 </Typography>
-                <Typography variant="subtitle1" component="span" color="#ccc">
+                <Typography
+                  variant="subtitle1"
+                  component="span"
+                  color="text.primary"
+                >
                   {" — Do you have Paris suggestions? Have you ever…"}
                 </Typography>
               </>
