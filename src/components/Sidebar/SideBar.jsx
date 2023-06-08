@@ -12,27 +12,33 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 function SideBar() {
   return (
-    <Box>
-      <List>
-        {data.map((item) => {
-          return (
-            <ListItem key={crypto.randomUUID()} disablePadding>
-              <ListItemButton>
-                <ListItemIcon>{item.icon}</ListItemIcon>
-                <ListItemText primary={item.title} />
-              </ListItemButton>
-            </ListItem>
-          );
-        })}
-        <ListItem disablePadding>
-          <ListItemButton>
-            <ListItemIcon>
-              <DarkModeIcon />
-            </ListItemIcon>
-            <Switch />
-          </ListItemButton>
-        </ListItem>
-      </List>
+    <Box flex="1" sx={{ borderRight: "solid 1px rgba(0,0,0,0.1)" }}>
+      <Box position="sticky" top={0} left={0}>
+        <List>
+          {data.map((item) => {
+            return (
+              <ListItem
+                sx={{ borderBottom: "1px solid rgba(0,0,0,0.1)" }}
+                key={crypto.randomUUID()}
+                disablePadding
+              >
+                <ListItemButton sx={{ py: "20px" }}>
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.title} />
+                </ListItemButton>
+              </ListItem>
+            );
+          })}
+          <ListItem disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                <DarkModeIcon />
+              </ListItemIcon>
+              <Switch />
+            </ListItemButton>
+          </ListItem>
+        </List>
+      </Box>
     </Box>
   );
 }
