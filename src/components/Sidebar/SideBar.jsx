@@ -12,7 +12,13 @@ import DarkModeIcon from "@mui/icons-material/DarkMode";
 
 function SideBar() {
   return (
-    <Box flex="1" sx={{ borderRight: "solid 1px rgba(0,0,0,0.1)" }}>
+    <Box
+      flex="1"
+      sx={{
+        display: { xs: "none", lg: "block" },
+        borderRight: "solid 1px rgba(0,0,0,0.1)",
+      }}
+    >
       <Box position="sticky" top={0} left={0}>
         <List>
           {data.map((item) => {

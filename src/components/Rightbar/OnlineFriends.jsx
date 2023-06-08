@@ -2,7 +2,7 @@ import { Avatar, AvatarGroup, Box, Typography } from "@mui/material";
 
 function OnlineFriends() {
   return (
-    <Box>
+    <Box sx={{ mb: "10px" }}>
       <Typography variant="h6" color="grayText" sx={{ opacity: "0.8" }}>
         Online Friends
       </Typography>
